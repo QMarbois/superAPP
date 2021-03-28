@@ -249,13 +249,6 @@ button:focus {
     grid-column: span 3;
 }
 
-@media screen and (max-width : 768px) {
-    .services .container {
-        display: flex;
-        flex-flow: column wrap;
-    }
-}
-
 @media screen and (max-width : 992px){
     .services h2 {
         grid-column: span 2;
@@ -263,9 +256,16 @@ button:focus {
 
     .services .container {
         grid-template-columns: 1fr 1fr;
-        
     }
 }
+
+@media screen and (max-width : 768px) {
+    .services .container {
+        display: flex;
+        flex-flow: column wrap;
+    }
+}
+
 
 .card{
     grid-column: auto;
